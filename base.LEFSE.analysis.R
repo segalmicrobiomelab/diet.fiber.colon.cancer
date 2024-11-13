@@ -105,7 +105,7 @@ lefse_results <- run_lefse(subset.cecum.physeq.eig.HF.v.NC,   group = 'Treatment
 marker_table(lefse_results)
 
 lef_out <- run_lefse(subset.cecum.physeq.eig.HF.v.NC, group = "Treatment", taxa_rank = "Genus", norm = "CPM",
-                     kw_cutoff = 0.05, lda_cutoff = 2)
+                     kw_cutoff = 0.05, lda_cutoff = 2, strict = c("2"))
 
 plot_cladogram(lefse_results, color=c("orange", "blue"),only_marker = FALSE,
                branch_size = 0.2, alpha = 0.2, node_size_scale = 1, node_size_offset = 1, 
